@@ -1,0 +1,58 @@
+
+
+.header__wrapper{
+    display: flex;
+}
+.header__mark{
+    display: flex;
+    margin: 20px;
+    
+}
+.header__mark p{
+margin-top: 2px;
+width: 10px;
+font-size: 20px;
+margin-left: 5px;
+font-family: 'Montserrat', sans-serif;
+}
+
+.header__list ul{
+    margin-top: 20px;
+    display: flex;
+    list-style-type: none;
+    width: 75vw;
+    margin-left: 80%;
+}
+.header__list  li{
+    display: flex;
+    width: 100px;
+    height: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2px;
+    font-weight: 600;
+    color: rgba(66, 66, 124, 0.897);
+}
+.button__header{
+    
+}
+.reg__button{
+    display: flex;
+    margin-left:auto ;
+    margin-top: 20px;
+    padding: 4px 20px;
+    margin-right: 100px;
+    border: 2px solid rgba(66, 66, 124, 0.699);
+    border-radius: 20px;
+    cursor: pointer;
+    background: none;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(66, 66, 124, 0.897) ;
+}
+.reg__button:hover{
+background-color: rgba(66, 66, 124, 0.699);
+color: aliceblue;
+transition: 0.4s;
+}
+

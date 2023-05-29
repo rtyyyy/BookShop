@@ -1,0 +1,26 @@
+.books__title{
+    color: rgba(66, 66, 124, 0.897) ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    margin-left: 20vh;
+}
+
+.book__img img{
+    border: none;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px;
+    
+}
+
+.book__item{
+    margin: 10px;
+    
+    border-radius: 10px;
+    background-color: white;
+}
+.book__item:hover{
+    box-shadow: 1px 1px 1px 2px rgba(78, 78, 128, 0.596)  ;
+    transition: all 0.2s;
+    cursor: pointer;
+    
+}
