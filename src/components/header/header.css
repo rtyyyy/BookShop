@@ -2,14 +2,20 @@
 
 .header__wrapper{
     display: flex;
+    height: 80px;
+    background-color: rgba(111, 152, 189, 0.288);
 }
+.header__wrapper li :active{
+    color: rgba(66, 66, 124, 0.897) ;
+}
+
 .header__mark{
     display: flex;
     margin: 20px;
     
 }
 .header__mark p{
-margin-top: 2px;
+margin-top: -3px;
 width: 10px;
 font-size: 20px;
 margin-left: 5px;
@@ -32,10 +38,12 @@ font-family: 'Montserrat', sans-serif;
     margin-top: 2px;
     font-weight: 600;
     color: rgba(66, 66, 124, 0.897);
-}
-.button__header{
     
 }
+.header__list Link{
+    text-decoration: none;
+}
+
 .reg__button{
     display: flex;
     margin-left:auto ;

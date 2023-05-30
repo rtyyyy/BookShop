@@ -1,0 +1,113 @@
+.book__wrapper--item{
+    background-color: rgba(181, 196, 209, 0.288);
+    height: 100vh;
+    
+}
+
+.book__content--item{
+    display: flex;
+    
+}
+.book__button--item{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 25px;
+    padding-top: 5px;
+    background-color: rgba(123, 123, 192, 0.253);
+    color: rgba(59, 59, 112, 0.87);
+    border: none;
+
+}
+.book__image{
+display: block;
+margin-top: 10px;
+}
+.book__image img{
+    
+    margin-bottom: 50px;
+    margin-left: 10vw;
+    margin-top: 50px;
+    }
+.book__info{
+    margin-left: 50px;
+    margin-top: 60px;
+}
+.book__info li{
+    list-style-type: none;
+    margin: 10px 20px 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color:rgba(64, 61, 105, 0.815) ;
+}
+.book__info ul{
+    padding: 0;
+}
+.book__info--list{
+    display: flex;
+}
+
+.buy__button{
+    width: 140px;
+    height: 50px;
+    display: flex;
+    padding: 15px;
+    padding-left: 50px;
+    border: 1px solid rgba(128, 128, 128, 0.637);
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    color: #f1f1f1;
+    font-size: 16px;
+    background: rgba(59, 59, 112, 0.87);
+    
+}
+.buy__button:hover{
+    background: rgba(106, 106, 202, 0.87);
+    transition: 0.3s;
+}
+.book__buttons{
+    border: 1px solid rgba(73, 73, 119, 0.247);
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 20vh;
+}
+.book__buttons button{
+margin: 10px;
+margin-bottom: 10px;
+
+}
+.book__price--item{
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(146, 36, 45, 0.884);
+    font-size: 24px;
+}
+.book__title--item{
+    margin-top: -10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    color:rgba(33, 33, 65, 0.815) ;
+}
+.book__author--item{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    color:rgba(33, 33, 65, 0.575) ;
+}
+.book__delivery li{
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    width: 200px;
+}
+.book__delivery ul{
+    padding-left: 10px;
+}
+.book__desc--item{
+    position: relative;
+    left: 32vw;
+    top: -20vh;
+    width: 80vh;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
