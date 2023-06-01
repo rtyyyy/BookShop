@@ -6,12 +6,12 @@ import BookItem from './components/details/bookItem';
 import About from './components/about/about';
 import Contact from './components/contact/contact';
 
-function App() {
- 
+ function App() {
+   
   return (
     <div className="App">
             
-          
+            
       <Routes>
         <Route element={<Home/>} path='/'/>
         <Route element={<BookItem />} path="/bookItem/:id/:title/:author/:price/:age/:release/:pages/:description" />

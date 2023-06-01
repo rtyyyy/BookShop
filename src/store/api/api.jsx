@@ -7,7 +7,7 @@ export const api = createApi({
     tagTypes:['Book'],
     // take data from this url//
     baseQuery: fetchBaseQuery({
-        baseUrl:'http://localhost:3005/books'
+        baseUrl:'http://localhost:3005/book/'
     }),
     // endpoint for getting items (server request)// 
     endpoints: builder =>({

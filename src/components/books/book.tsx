@@ -9,6 +9,7 @@ function Book({book} : IBooks){
 
     return(
         <Link to={`/bookItem/:${book.id}/:${book.title}/:${book.author}/:${book.price}/:${book.age}/:${book.release}/:${book.pages}/:${book.description}`} className="book__item">
+        
         <div >
             <div className="book__img">
             <img src={book.img} alt="" style={{width:200, height:300 }}  />
