@@ -1,24 +1,55 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './details.css'
 import {BsBookmarkHeartFill} from 'react-icons/bs'
 import Header from "../header/header";
 import { useParams } from "react-router-dom";
-function BookItem( ){
-    const {id , img , title, author, price,age,release, pages,description} = useParams()
+import Footer from "../footer/footer";
+
+interface IBook{
+    id : string,
+    title: string,
+    author: string,
+    price: string,
+    img: string,
+    age: string,
+    pages: number,
+    release: number,
+    description: string
+}
+   
+
+
+function BookItem(   ){
+    
+    const [book, setBook] = useState<IBook | null>(null)
+    
+    useEffect(()=>{
+        fetch('http://localhost:3005/book/3')
+        .then(res =>  res.json())
+        // .then( res => console.log(res))
+        
+        .then(book => setBook(book))
+        .catch(error => console.log("ашыпка"));
+    }, []) ;
+    if (!book) {
+        return <div>ERROR</div>;
+      }
+    console.log(book)
     
     return(
+        
         <div className="book__wrapper--item">
             <Header/>
             <div className="book__content--item">
-            
-            
             <div className="book__image">
-            <img src={img?.slice(1)} alt="" style={{width:400, height:600 }} />
+            <img src={book?.img} alt="" style={{width:400, height:600 }} />
+      
             </div>
             <div style={{display:"flex"}}>
             <div className="book__info">
-                <h1 className="book__title--item">{title?.slice(1)}</h1>
-                <h3 className="book__author--item">{author?.slice(1)}</h3>
+                <h1 className="book__title--item">{book?.title}</h1>
+                
+                <h3 className="book__author--item">{book?.author}</h3>
                 <div className="book__info--list">
                 <ul>
                     <li className="book__restriction">Age restriction</li>
@@ -27,10 +58,10 @@ function BookItem( ){
                     <li>Goods ID</li>
                 </ul>
                 <ul>
-                    <li className="book__restriction">{age?.slice(1)}</li>
-                    <li className="book__release">{release?.slice(1)}</li>
-                    <li className="book__pages">{pages?.slice(1)}</li>
-                    <li className="book__id">{id?.slice(1)}</li>
+                    <li className="book__restriction">{book?.age}</li>
+                    <li className="book__release">{book?.release}</li>
+                    <li className="book__pages">{book?.pages}</li>
+                    <li className="book__id">{book?.id}</li>
                 </ul>
                 </div>
                 
@@ -38,7 +69,7 @@ function BookItem( ){
                 
             </div>
             <div className="book__buttons">
-                <p className="book__price--item"> {price?.slice(1)}</p>
+                <p className="book__price--item"> {book?.price}</p>
                 <div style={{display:'flex'}}>
                 <button className="buy__button">Buy </button>
                 <button className="book__button--item" style={{marginRight:20}}> <BsBookmarkHeartFill/></button>
@@ -59,9 +90,9 @@ function BookItem( ){
             
         </div>
         <div className="book__desc--item">
-        <p>{description?.slice(1)}</p>
+        <p>{book?.description}</p>
         </div>
-        
+        <Footer/>
     </div>
     )
 }

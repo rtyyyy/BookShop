@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
+import Footer from "../footer/footer";
+import Header from "../header/header";
+
 
 
 
 function Contact(){
+    
     return(
         <div>
-dnnn
+<Header/>
+{/* <button onClick={() => setModalActive(true)} style={{marginTop:200}}>open</button> */}
+{/* <Modal active={modalActive} setActive={setModalActive} />  */}
+<Footer/>
         </div>
     )
 }

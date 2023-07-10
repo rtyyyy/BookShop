@@ -13,12 +13,14 @@
 }
 
 .book__item{
+    
     margin: 10px;
     text-decoration: none;
     border-radius: 15px;
     background-color: white;
     font-family: 'Montserrat', sans-serif;
     color: rgba(46, 46, 63, 0.836) ;
+    padding-bottom: 2px;
 }
 .book__item:active{
     color : rgba(46, 46, 63, 0.836) ; 
@@ -36,8 +38,15 @@
 .book__title{
     margin-top: 3px ;
     font-weight: 600;
+    text-decoration: none;
 }
 .book__author{
+    text-decoration: none;
     margin-top: 0 ;
     margin-bottom: 40px;
+}
+.book__item--wrapper{
+    display: flex;
+    margin-left: 10vw;
+    
 }

@@ -2,12 +2,16 @@
 
 .header__wrapper{
     display: flex;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
     height: 80px;
-    background-color: rgba(111, 152, 189, 0.288);
+    background-color: rgba(111, 153, 189, 0.548);
+    top: 0;
 }
-.header__wrapper li :active{
+/* .header__wrapper li :active{
     color: rgba(66, 66, 124, 0.897) ;
-}
+} */
 
 .header__mark{
     display: flex;
@@ -27,7 +31,7 @@ font-family: 'Montserrat', sans-serif;
     display: flex;
     list-style-type: none;
     width: 75vw;
-    margin-left: 80%;
+    margin-left: 73%;
 }
 .header__list  li{
     display: flex;
@@ -37,9 +41,11 @@ font-family: 'Montserrat', sans-serif;
     font-family: 'Montserrat', sans-serif;
     margin-top: 2px;
     font-weight: 600;
-    color: rgba(66, 66, 124, 0.897);
+    color: rgba(111, 153, 189, 0.548);
     
 }
+
+
 .header__list Link{
     text-decoration: none;
 }
@@ -50,7 +56,7 @@ font-family: 'Montserrat', sans-serif;
     margin-top: 20px;
     padding: 4px 20px;
     margin-right: 100px;
-    border: 2px solid rgba(66, 66, 124, 0.699);
+    border: 2px solid rgba(219, 219, 235, 0.699);
     border-radius: 20px;
     cursor: pointer;
     background: none;
@@ -59,7 +65,7 @@ font-family: 'Montserrat', sans-serif;
     color: rgba(66, 66, 124, 0.897) ;
 }
 .reg__button:hover{
-background-color: rgba(66, 66, 124, 0.699);
+background-color: rgba(42, 42, 80, 0.699);
 color: aliceblue;
 transition: 0.4s;
 }

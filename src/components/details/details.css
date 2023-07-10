@@ -1,7 +1,7 @@
 .book__wrapper--item{
     background-color: rgba(181, 196, 209, 0.288);
     height: 100vh;
-    
+    margin-top: 80px;
 }
 
 .book__content--item{

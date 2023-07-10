@@ -29,9 +29,9 @@
  
  .input:focus, input:hover {
   outline: none;
-  border-color: rgba(127, 214, 115, 0.479);
+  border-color: rgba(104, 166, 218, 0.479);
   background-color: #fff;
-  box-shadow: 0 0 0 4px rgba(109, 214, 106, 0.384);
+  box-shadow: 0 0 0 4px rgba(93, 146, 214, 0.384);
  }
  
  .icon {

@@ -1,0 +1,38 @@
+.footer__wrapper{
+    height: 200px;
+    background-color: #4d58ff;
+    text-align: center;
+    margin-top: 100px;
+    
+    position: static;
+    bottom: 0;
+    width: 100%;
+    
+    
+}
+.social__media--footer a{
+    color: white;
+    font-size: 25px;
+    margin: 20px;
+    
+}
+.social__media--footer{
+padding-top: 30px;
+padding-bottom: 15px;
+}
+.links__footer a{
+    margin: 20px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.links__footer a:hover{
+    color: #a3a8ee;
+}
+.social__media--footer a:hover{
+    color: #a3a8ee;
+}
+.copyright__footer{
+    color: white;
+    font-size: 15px;
+}

@@ -1,0 +1,60 @@
+
+article {
+    background: #ffffff;
+    width: 60vw;
+    margin-left: 17vw;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  article header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    padding: 0 10px 0 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #2472f88e;
+    margin-bottom: 10px;
+    color: #f8f8f8;
+  }
+  
+  article header.active {
+    background: #6366f1;
+  }
+  
+  article header.active span {
+    rotate: -180deg;
+  }
+  
+  article h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  article p {
+    padding: 0 20px 10px;
+    line-height: 1.7;
+    font-size: 14px;
+  }
+  
+  article span {
+    transition: 0.3s;
+  }
+  
+  .collapse {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+  }
+  
+  .collapse.show {
+    height: auto;
+  }
+.material-symbols-outlined{
+  margin-right: 20px;
+}

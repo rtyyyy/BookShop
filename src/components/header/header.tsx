@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import {FaBookOpen} from "react-icons/fa"
 import './header.css'
 import {BsBookmarkHeartFill} from 'react-icons/bs'
 import { Link } from "react-router-dom";
+import Modal from "../popup/popup";
 
 function Header(){
+    const [modalActive , setModalActive] = useState(false)
     return (
         <div className="header__wrapper">
         <div className="header__mark">
@@ -13,13 +15,15 @@ function Header(){
         </div>
         <div className="header__list">
             <ul>
-                <li> <Link to={'/about'} style={{textDecoration:'none'}}>About us</Link> </li>
-                <li><Link to={'/contact'} style={{textDecoration:'none'}}>Contact</Link></li>
-                <li><BsBookmarkHeartFill/></li>
+                <li><Link to={'/'} style={{textDecoration:'none' , color: "white"}}>Home</Link></li>
+                <li> <Link to={'/bonuses'} style={{textDecoration:'none' , color: "white"}}>Bonuses</Link> </li>
+                <li style={{color:'rgba(66, 66, 124, 0.897)'}}><li onClick={() => setModalActive(true)} style={{ color:"white" , textDecoration:'none'}}>Write us</li>
+                <Modal active={modalActive} setActive={setModalActive}  /> </li>
+                <li ><BsBookmarkHeartFill style={{width:30, height:30, color:"white"}}/></li>
             </ul>
         </div>
         <div >
-            <button className="reg__button">Log in</button>
+            <button className="reg__button" style={{ color: "white"}}>Log in</button>
         </div>
         </div>
     )

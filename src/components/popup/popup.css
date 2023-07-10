@@ -1,0 +1,183 @@
+.popup__wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba( 0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.popup__wrapper.active{
+opacity: 1;
+pointer-events: all;
+}
+.popup__content{
+    padding: 20px;
+    border-radius: 12px;
+    background-color: white;
+    display: flex;
+}
+.content__message--wrapper h2 , p{
+    margin-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.name__input--popup{
+    display: flex;
+}
+.input__name, .input__surname  {
+    width: 100%;
+    width:31vh;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+   }
+   .image__message img{
+    height: 54.3vh;
+    opacity: 0.8;
+   }
+   .input__email{
+    width: 100%;
+    margin-top: 15px;
+    width:57.5vh;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+   }
+   .input__phone{
+    width: 100%;
+    margin-top: 15px;
+    width:63.7vh;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+   }
+   .input__name::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .input__message:focus, input:hover {
+    outline: none;
+    border-color: rgba(104, 166, 218, 0.479);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(93, 146, 214, 0.384);
+   }
+   
+   .icon__profil {
+    position: relative;
+    fill: #9e9ea7;
+    left: 30px;
+    top: 2px;
+    
+   }
+   .icon__email{
+    position: relative;
+    fill: #9e9ea7;
+    left: 30px;
+    top: 2px;
+   }
+   .input__message{
+    width: 100%;
+    margin-top: 15px;
+    width:63.7vh;
+    height: 10vw;
+    padding-top: 10px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+    font-size: 16px;
+    margin-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+   }
+   .message__field--popup textarea{
+    width: 57.7vh;
+    line-height: 50px;
+   }
+
+   .send__message button{
+    width: 32.4vw;
+    margin-left: 15px;
+    display: flex;
+    padding: 10px 300px;
+    border: 1px solid rgba(79, 123, 204, 0.637);
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    color: #f1f1f1;
+    font-size: 16px;
+    background: rgba(85, 85, 214, 0.87);
+    margin-top: 10px;
+    text-align: center;
+}
+.send__message button:hover{
+    background: rgba(106, 106, 202, 0.87);
+    transition: 0.3s;
+}
+.social__media--popup a{
+    color: rgb(32, 32, 110);
+    font-size: 25px;
+    margin: 20px;
+}
+.social__media--popup{
+    position: absolute;
+    top: 700px;
+    margin-left: 30px;
+    padding-bottom: 15px;
+}
+.social__media--popup a:hover{
+    color: #a3a8ee;
+}
+.header__mark--popup{
+    position: absolute;
+    top: 550px;
+    display: flex;
+}
+.header__mark--popup p{
+    margin-top: -3px;
+    width: 10px;
+    font-size: 20px;
+    margin-left: 5px;
+    font-family: 'Montserrat', sans-serif;
+    }
+.header__desc--popup{
+    position: absolute;
+width: 17vw;
+top: 600px;
+margin-left: 30px;
+}
