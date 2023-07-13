@@ -10,7 +10,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
  
 
-
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.setHeader('Access-Control-Allow-Methods', 'get, post, put, delete');  //деф от ошибки CORS//
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+});
 
     const books = 
   [
@@ -24,48 +29,23 @@ app.use(bodyParser.json());
     
   ] 
 
-  app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
-    res.setHeader('Access-Control-Allow-Methods', 'get, post, put, delete');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-    next();
+  app.get('/book/', (req, res) => {
+    res.json(books);                   //добавляет весь массив на страницу//
   });
 
-  app.get('/book/:id', (req, res) => {
-    const bookId = req.params.id;
-    // console.log( typeof bookId)
-    const book = books.find( (item)=> item.id === bookId)
-    if (book ) {
-      res.json(book);
-      
+
+   app.get('/book/:id', (req, res) => {
+    const bookId = req.params.id;  //вытягивает id //
+    const book = books.find( (item)=>  `${item.id}` === `${bookId}`)  //собирает все id из массива//
+    if (book.id === bookId) {
+      res.json(book); 
     } else {
       res.status(404).send('Book not found'); 
     }
-    // if (req.url === '/bookItem/:id' ) {
-    //   res.json(book.id);
-      
-    // } else {
-    //   res.status(404).send('Book not found'); 
-    // }
-    
   });
-  app.get('/book/', (req, res) => {
-    res.json(books);
-  });
-
 
   app.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
   });
 
 
-  
-
-// app.get('/data', (req, res) => {
-//     const data = JSON.parse(fs.readFileSync('./db.json', 'utf-8'));
-//     res.send(data);
-//   });
-  
-//   app.listen(port, () => {
-//     console.log(`Server is listening on port ${port}`);
-//   });

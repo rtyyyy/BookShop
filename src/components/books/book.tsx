@@ -18,8 +18,9 @@ interface IBook{
 
 function Book(){
     const [books, setBooks] = useState<IBook[]>([]);
+    
     useEffect(()=>{
-        fetch("http://localhost:3005/book/")
+        fetch("http://localhost:3005/book/")  //просто собираем весь массив с сервера и подгружаем на клиент//
         .then(res =>  res.json())
         // .then( res => console.log(res))
         .then(book => setBooks(book))

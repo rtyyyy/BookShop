@@ -15,7 +15,7 @@ import Bonuses from './components/cashback/bonuses';
             
       <Routes>
         <Route element={<Home/>} path='/'/>
-        <Route element={<BookItem />} path="/bookItem/:id" />
+        <Route element={<BookItem   />} path="/bookItem/:id" />
         <Route element={<Bonuses />} path='/bonuses' />
         <Route element={<Contact />} path='/contact' />
         

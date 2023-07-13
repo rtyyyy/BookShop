@@ -5,6 +5,8 @@ import Header from "../header/header";
 import { useParams } from "react-router-dom";
 import Footer from "../footer/footer";
 
+
+
 interface IBook{
     id : string,
     title: string,
@@ -19,22 +21,21 @@ interface IBook{
    
 
 
-function BookItem(   ){
+function BookItem( ){
     
     const [book, setBook] = useState<IBook | null>(null)
-    
+    const { id  } = useParams(); // вытягиваем id из адресной строки//
     useEffect(()=>{
-        fetch('http://localhost:3005/book/3')
-        .then(res =>  res.json())
-        // .then( res => console.log(res))
-        
-        .then(book => setBook(book))
-        .catch(error => console.log("ашыпка"));
-    }, []) ;
-    if (!book) {
-        return <div>ERROR</div>;
-      }
+        if (id){           
+            fetch(`http://localhost:3005/book/${id}`)    // если id существует , делаем запрос на сервер и возвращаем нужный объект//
+            .then(res =>  res.json())
+            .then(book => setBook(book))
+            .catch(error => console.log("ашыпка"));
+        } 
+    },[id] ) ;
+    
     console.log(book)
+    
     
     return(
         
@@ -61,7 +62,7 @@ function BookItem(   ){
                     <li className="book__restriction">{book?.age}</li>
                     <li className="book__release">{book?.release}</li>
                     <li className="book__pages">{book?.pages}</li>
-                    <li className="book__id">{book?.id}</li>
+                    <li className="book__id">{id}</li>
                 </ul>
                 </div>
                 
@@ -94,6 +95,7 @@ function BookItem(   ){
         </div>
         <Footer/>
     </div>
+   
     )
 }
 
