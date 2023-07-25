@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from "react";
-import './details.css'
-import {BsBookmarkHeartFill} from 'react-icons/bs'
-import Header from "../header/header";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Footer from "../footer/footer";
-
-
-
+import { BsBookmarkHeartFill } from "react-icons/bs";
+import Header from "../header/header";
+import './details.css'
 interface IBook{
     id : string,
     title: string,
@@ -18,28 +15,21 @@ interface IBook{
     release: number,
     description: string
 }
-   
 
-
-function BookItem( ){
-    
+function ArtBook(){
     const [book, setBook] = useState<IBook | null>(null)
     const { id  } = useParams(); // вытягиваем id из адресной строки//
     useEffect(()=>{
         if (id){           
-            fetch(`http://localhost:3005/book/${id}`)    // если id существует , делаем запрос на сервер и возвращаем нужный объект//
+            fetch(`http://localhost:3005/artBooks/${id}`)    // если id существует , делаем запрос на сервер и возвращаем нужный объект//
             .then(res =>  res.json())
             .then(book => setBook(book))
             .catch(error => console.log("ашыпка"));
         } 
     },[id] ) ;
-    
-    // console.log(book)
-    
-    
     return(
-        
-        <div className="book__wrapper--item">
+        <div>
+<div className="book__wrapper--item">
             <Header/>
             <div className="book__content--item">
             <div className="book__image">
@@ -95,8 +85,8 @@ function BookItem( ){
         </div>
         <Footer/>
     </div>
-   
+        </div>
     )
 }
 
-export default BookItem
+export default ArtBook

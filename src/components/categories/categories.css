@@ -5,15 +5,6 @@
     
 }
 
-.categories__wrapper--item{
-    background-color: white;
-    margin: 10px;
-    width: 170px;
-    border: 1px solid rgba(66, 66, 124, 0.897);
-    border-radius: 10px;
-    height: 170px;
-    cursor: pointer;
-}
 .category__title--item {
     color: rgba(66, 66, 124, 0.897) ;
     font-family: 'Montserrat', sans-serif;
@@ -32,7 +23,20 @@
     margin-left: 20vh;
 }
 
-.categories__wrapper--item:hover{
+.categories__list{
+    display: flex;
+}
+.categories__list li{
+    list-style-type: none;
+    background-color: white;
+    margin: 10px;
+    width: 170px;
+    border: 1px solid rgba(66, 66, 124, 0.897);
+    border-radius: 10px;
+    height: 170px;
+    cursor: pointer;
+}
+.categories__list li:hover{
     box-shadow: 1px 1px 2px 2px rgba(66, 66, 124, 0.897)  ;
     transition: all 0.2s;
 }

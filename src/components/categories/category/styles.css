@@ -1,18 +1,29 @@
-.books__title{
+.category__title{
+    margin-left: 15vw;
+}
+.book__category--wrapper{
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 500px 500px 500px;
+    margin-left: 15vw;
+    
+}
+.books__category--title {
     color: rgba(66, 66, 124, 0.897) ;
     font-family: 'Montserrat', sans-serif;
     font-size: 26px;
     margin-left: 20vh;
+    
 }
 
-.book__img img{
+.book__category--img img{
     border: none;
     border-top-left-radius:16px ;
     border-top-right-radius:16px;
     
 }
 
-.book__item{
+.book__category--item{
     
     margin: 10px;
     text-decoration: none;
@@ -22,16 +33,16 @@
     color: rgba(46, 46, 63, 0.836) ;
     padding-bottom: 2px;
 }
-.book__item:active{
+.book__category--item:active{
     color : rgba(46, 46, 63, 0.836) ; 
 }
-.book__item:hover{
+.book__category--item:hover{
     box-shadow: 1px 1px 1px 2px rgba(78, 78, 128, 0.596)  ;
     transition: all 0.2s;
     cursor: pointer;
     
 }
-.book__description{
+.book__category--description{
     margin-left: 10px;
     
 }
@@ -40,16 +51,12 @@
     font-weight: 600;
     text-decoration: none;
 }
-.book__author{
+.book__category--author{
     text-decoration: none;
     margin-top: 0 ;
     margin-bottom: 40px;
 }
-.book__item--wrapper{
-    display: flex;
-    margin-left: 10vw;
-    
-}
-.book__price{
+
+.book__category--price{
     color: rgba(146, 36, 45, 0.884);
 }

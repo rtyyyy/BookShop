@@ -22,11 +22,10 @@ function Book(){
     useEffect(()=>{
         fetch("http://localhost:3005/book/")  //просто собираем весь массив с сервера и подгружаем на клиент//
         .then(res =>  res.json())
-        // .then( res => console.log(res))
         .then(book => setBooks(book))
         .catch(error => console.log("ашыпка"));
     }, []) ; 
-console.log(books) 
+// console.log(books) 
     return(
         
         
