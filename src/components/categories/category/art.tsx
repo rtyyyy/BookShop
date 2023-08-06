@@ -3,7 +3,7 @@ import Header from "../../header/header"
 import Input from "../../input/input"
 import './styles.css'
 import { Link } from "react-router-dom";
-import axios from "axios";
+import Footer from "../../footer/footer";
 interface IBook{
     id : string,
     title: string,
@@ -84,6 +84,7 @@ function Art() {
         </div>
         ))}
       </div>
+      <Footer/>
         </div>
     )
 }

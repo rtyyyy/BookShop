@@ -16,7 +16,7 @@ function Modal({active, setActive } : IPopup){
             <div className='popup__content' onClick={e => e.stopPropagation()}>
             
                 <div className='image__message'>
-                    <img src="./images/helpMessage.png" alt="" />
+                    <img src="../images/helpMessage.png" alt="" />
                     <div className="social__media--popup">
                         <a href="/"><BsTwitter/></a>
                         <a href="/"><BsFacebook/></a>

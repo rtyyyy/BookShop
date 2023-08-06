@@ -9,7 +9,7 @@ function Footer(){
             <a href="/"><BsTwitter/></a>
             <a href="/"><BsFacebook/></a>
             <a href="/"><BsInstagram/></a>
-            <a href="https://pnrtscr.com/kqrkc7"><BsLinkedin/></a>
+            <a href=""><BsLinkedin/></a>
             <a href="/"><SlSocialVkontakte/></a>
             </div>
             <div className="links__footer">
