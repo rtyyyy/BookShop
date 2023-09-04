@@ -4,6 +4,7 @@ import './header.css'
 import {BsBookmarkHeartFill} from 'react-icons/bs'
 import { Link } from "react-router-dom";
 import Modal from "../popup/popup";
+import ChoisenIcon from "./chosenIcon";
 
 function Header(){
     const [modalActive , setModalActive] = useState(false)
@@ -19,7 +20,7 @@ function Header(){
                 <li> <Link to={'/bonuses'} style={{textDecoration:'none' , color: "white"}}>Bonuses</Link> </li>
                 <li style={{color:'rgba(66, 66, 124, 0.897)'}}><li onClick={() => setModalActive(true)} style={{ color:"white" , textDecoration:'none'}}>Write us</li>
                 <Modal active={modalActive} setActive={setModalActive}  /> </li>
-                <li ><BsBookmarkHeartFill style={{width:30, height:30, color:"white"}}/></li>
+                <li> <Link to={'/chosen'}><ChoisenIcon/></Link></li>
             </ul>
         </div>
         <div >

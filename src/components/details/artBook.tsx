@@ -1,9 +1,14 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Footer from "../footer/footer";
-import { BsBookmarkHeartFill } from "react-icons/bs";
+import { BsBookmarkHeartFill , BsBookmarkHeart } from "react-icons/bs";
 import Header from "../header/header";
 import './details.css'
+import { useDispatch, useSelector } from "react-redux";
+import { actions } from "../../store/api/chosen";
+import { useActions } from "../hooks/useActions";
+import { useChosen } from "../hooks/useChosen";
+import Payment from "../payment/payment";
 interface IBook{
     id : string,
     title: string,
@@ -17,6 +22,7 @@ interface IBook{
 }
 
 function ArtBook(){
+    const [paymentActive , setPaymentActive] = useState(false)
     const [book, setBook] = useState<IBook | null>(null)
     const { id  } = useParams(); // вытягиваем id из адресной строки//
     useEffect(()=>{
@@ -26,7 +32,13 @@ function ArtBook(){
             .then(book => setBook(book))
             .catch(error => console.log("ашыпка"));
         } 
+        window.scroll(0 , 0)
     },[id] ) ;
+
+    const {chosen} = useChosen()
+    const {toggleFavorites} = useActions()  //нужен для того чтобы дёргать экшены//
+    const isExists = chosen.some( (b: { id: any; }) => b.id === book?.id)
+    console.log(chosen)
     return(
         <div>
 <div className="book__wrapper--item">
@@ -62,8 +74,10 @@ function ArtBook(){
             <div className="book__buttons">
                 <p className="book__price--item"> {book?.price}</p>
                 <div style={{display:'flex'}}>
-                <button className="buy__button">Buy </button>
-                <button className="book__button--item" style={{marginRight:20}}> <BsBookmarkHeartFill/></button>
+                <button className="buy__button"><li onClick={() => setPaymentActive(true)} style={{ color:"white" , textDecoration:'none', listStyleType:'none', }}>Buy</li>
+                <Payment active={paymentActive} setActive={setPaymentActive}  /> </button>
+                
+                <button onClick={() => toggleFavorites(book)} className="book__button--item" style={{marginRight:20 , borderRadius:10}}>{ isExists ? <BsBookmarkHeartFill/> : <BsBookmarkHeart/> } </button>
                 </div>
                 <div className="book__delivery">
                     <ul>

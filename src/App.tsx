@@ -19,6 +19,7 @@ import FantasyBook from './components/details/fantasyBook';
 import HistoryBook from './components/details/historyBook';
 import MusicBook from './components/details/musicBook';
 import RomanceBook from './components/details/romanceBook';
+import Chosen from './components/chosen/chosen';
 
  function App() {
    
@@ -35,6 +36,7 @@ import RomanceBook from './components/details/romanceBook';
         <Route element={<RomanceBook  />} path="/romanceBook/:id" />
         <Route element={<Bonuses />} path='/bonuses' />
         <Route element={<Art />} path='/art' />
+        <Route element={<Chosen />} path='/chosen' />
         <Route element={<Children />} path='/children' />
         <Route element={<Fantasy />} path='/fantasy' />
         <Route element={<History />} path='/history' />

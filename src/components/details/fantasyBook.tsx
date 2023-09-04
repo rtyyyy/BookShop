@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Footer from "../footer/footer";
-import { BsBookmarkHeartFill } from "react-icons/bs";
+import { BsBookmarkHeart, BsBookmarkHeartFill } from "react-icons/bs";
 import Header from "../header/header";
 import './details.css'
+import { useChosen } from "../hooks/useChosen";
+import { useActions } from "../hooks/useActions";
 interface IBook{
     id : string,
     title: string,
@@ -26,7 +28,11 @@ function FantasyBook(){
             .then(book => setBook(book))
             .catch(error => console.log("ашыпка"));
         } 
+        window.scroll(0 , 0)
     },[id] ) ;
+    const {chosen} = useChosen()
+    const {toggleFavorites} = useActions()  //нужен для того чтобы дёргать экшены//
+    const isExists = chosen.some( (b: { id: any; }) => b.id === book?.id)
     return(
         <div>
 <div className="book__wrapper--item">
@@ -63,7 +69,7 @@ function FantasyBook(){
                 <p className="book__price--item"> {book?.price}</p>
                 <div style={{display:'flex'}}>
                 <button className="buy__button">Buy </button>
-                <button className="book__button--item" style={{marginRight:20}}> <BsBookmarkHeartFill/></button>
+                <button onClick={() => toggleFavorites(book)} className="book__button--item" style={{marginRight:20 , borderRadius:10}}> { isExists ? <BsBookmarkHeartFill/> : <BsBookmarkHeart/> }</button>
                 </div>
                 <div className="book__delivery">
                     <ul>

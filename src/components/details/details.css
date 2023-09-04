@@ -51,8 +51,8 @@ margin-top: 10px;
     width: 140px;
     height: 50px;
     display: flex;
-    padding: 15px;
-    padding-left: 50px;
+    justify-content: center;
+    align-items: center;
     border: 1px solid rgba(128, 128, 128, 0.637);
     border-radius: 10px;
     cursor: pointer;
@@ -61,6 +61,10 @@ margin-top: 10px;
     font-size: 16px;
     background: rgba(59, 59, 112, 0.87);
     
+}
+.buy__button li{
+    position: relative;
+    padding: 20px 60px;
 }
 .buy__button:hover{
     background: rgba(106, 106, 202, 0.87);
@@ -106,6 +110,7 @@ margin-bottom: 10px;
 }
 .book__desc--item{
     position: relative;
+    z-index: 1;
     left: 32vw;
     top: -20vh;
     width: 80vh;

@@ -1,0 +1,182 @@
+.payment__wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba( 0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+    
+}
+.payment__wrapper.active{
+    
+    z-index: 3;
+opacity: 1;
+pointer-events: all;
+
+}
+.payment__content{
+    padding: 20px;
+    border-radius: 12px;
+    background-color: white;
+    display: flex;
+}
+.card__payment--wrapper h2 , p{
+    color: #0d0c22;
+    margin-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.name__input--payment{
+    position: relative;
+    left: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.input__expiry {
+    width: 100%;
+    width:30vh;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15px;
+    margin-left: 10px;
+   }
+   .input__cvc{
+    width: 100%;
+    width:15vh;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15px;
+    margin-left: 10px;
+   }
+   .input__expiry{
+    margin-left: 11px;
+    
+   }
+  
+   .input__email--card{
+    width: 100%;
+    margin-top: 15px;
+    width:55vh;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+   }
+   .input__number{
+    width: 100%;
+    margin-top: 15px;
+    width:55vh;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+   }
+   .input__name::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .input__payment:focus, input:hover {
+    outline: none;
+    border-color: rgba(104, 166, 218, 0.479);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(93, 146, 214, 0.384);
+   }
+   
+   .icon__card {
+    position: relative;
+    fill: #9e9ea7;
+    left: 40px;
+    top: 2px;
+    margin-left: 10px;
+    
+   }
+   .icon__email{
+    position: relative;
+    fill: #9e9ea7;
+    left: 30px;
+    top: 2px;
+   }
+   .input__payment{
+    width: 100%;
+    margin-top: 15px;
+    width:63.7vh;
+    height: 10vw;
+    padding-top: 10px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+    font-size: 16px;
+    margin-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+   }
+   
+   .send__payment button{
+    position: relative;
+    left: 5px;
+    width:50vh;
+    margin-left: 20px;
+    display: flex;
+    padding: 10px 295px;
+    border: 1px solid rgba(79, 123, 204, 0.637);
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    color: #f1f1f1;
+    font-size: 16px;
+    background: rgba(85, 85, 214, 0.87);
+    margin-top: 15px;
+    text-align: center;
+}
+.send__payment button:hover{
+    background: rgba(106, 106, 202, 0.87);
+    transition: 0.3s;
+    
+}
+
