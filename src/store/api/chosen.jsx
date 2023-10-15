@@ -1,10 +1,12 @@
-import { api } from "./api";
+// import { api } from "./api";
 import { createSlice } from "@reduxjs/toolkit";
 //Reducer - это функция, которая принимает текущее состояние и действие, и возвращает новое состояние. //
 
 //Slice - это функция,  которая представляет собой набор логики для управления определенной частью глобального состояния.//
 // Он содержит  начальное состояния, редьюсеры для обработки действий и селекторы для доступа к состоянию.//
-const initialState = [] // состояние по умолчанию//
+
+// } // состояние по умолчанию//
+const initialState = []
 export const favoritesSlice = createSlice({
     name: 'chosen',
     initialState,
@@ -25,3 +27,5 @@ export const favoritesSlice = createSlice({
 })
 
 export const { actions , reducer} = favoritesSlice
+
+

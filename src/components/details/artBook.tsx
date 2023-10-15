@@ -39,6 +39,8 @@ function ArtBook(){
     const {toggleFavorites} = useActions()  //нужен для того чтобы дёргать экшены//
     const isExists = chosen.some( (b: { id: any; }) => b.id === book?.id)
     console.log(chosen)
+    
+    
     return(
         <div>
 <div className="book__wrapper--item">
@@ -72,12 +74,12 @@ function ArtBook(){
                 
             </div>
             <div className="book__buttons">
-                <p className="book__price--item"> {book?.price}</p>
+                <p className="book__price--item"> {book?.price}$</p>
                 <div style={{display:'flex'}}>
                 <button className="buy__button"><li onClick={() => setPaymentActive(true)} style={{ color:"white" , textDecoration:'none', listStyleType:'none', }}>Buy</li>
                 <Payment active={paymentActive} setActive={setPaymentActive}  /> </button>
                 
-                <button onClick={() => toggleFavorites(book)} className="book__button--item" style={{marginRight:20 , borderRadius:10}}>{ isExists ? <BsBookmarkHeartFill/> : <BsBookmarkHeart/> } </button>
+                <button onClick={() => toggleFavorites(book)}  className="book__button--item" style={{marginRight:20 , borderRadius:10}}>{ isExists ? <BsBookmarkHeartFill/> : <BsBookmarkHeart/> } </button>
                 </div>
                 <div className="book__delivery">
                     <ul>

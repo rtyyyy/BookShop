@@ -6,8 +6,10 @@ import Content from "./content";
 import Footer from "../footer/footer";
 
 function Bonuses(){
+    window.scroll(0 , 0)
     return(
         <div className="bonuses__wrapper">
+            
             <Header/>
             <div className="cashback__bg">
             <img src="./images/bookCashbackBg.jpg" alt="" />

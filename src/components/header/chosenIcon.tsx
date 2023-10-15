@@ -3,7 +3,7 @@ import './header.css'
 import { useSelector } from 'react-redux'
 import { useChosen } from '../hooks/useChosen'
 
-function ChoisenIcon(){
+function ChosenIcon(){
     const {chosen} = useChosen()
     return(
         <div className='choisen__header'>
@@ -13,4 +13,4 @@ function ChoisenIcon(){
     )
 }
 
-export default ChoisenIcon
+export default ChosenIcon

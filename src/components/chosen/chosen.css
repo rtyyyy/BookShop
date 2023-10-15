@@ -1,0 +1,74 @@
+.book__wrapper--cart{
+    margin-top: 20px;
+    width: 75%;
+}
+.book__header--cart{
+    display: flex;
+    color: #3e3d53;
+    margin-left: 20px;
+    margin-top: 100px;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+}
+.book__header--cart div{
+    margin-top: 60px;
+    margin-left: 20px;
+    font-size: 46px;
+}
+
+.book__item--cart {
+    display: flex;
+    border-top: 1px solid rgba(128, 128, 128, 0.541);
+    margin-left: 20px;
+    
+}
+.line{
+    margin-left: 20px;
+    border:0.5px solid rgba(160, 157, 157, 0.363) ;
+}
+
+
+
+.book__item--cart img{
+ width: 100px;
+ height: 120px;
+ margin-top: 5px;
+ margin-left: 20px;
+}
+.book__info--cart{
+font-family: 'Montserrat', sans-serif;
+ margin-left: 40px;
+ font-size: 18px;
+ width: 200px;
+}
+.book__price--cart {
+    margin-left: 60%;
+    display: flex;
+    align-items: center;
+    
+}
+.book__price--cart h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(146, 36, 45, 0.884);
+    font-weight: 500;
+    font-weight: 24px;
+}
+.book__remove--cart div{
+    cursor: pointer;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    height: 100%;
+    color: rgba(64, 112, 175, 0.74);
+}
+.cart__content--cart{
+    display: flex;
+}
+.payment__window--cart{
+    
+    height: 150px;
+    margin: 50px;
+    padding-right: 15px;
+    border: 1px solid rgba(180, 175, 175, 0.37);
+}
