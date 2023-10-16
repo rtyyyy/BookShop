@@ -2,6 +2,7 @@ import React from "react";
 import Cart from "./cart";
 import EmptyCart from "./emptycart";
 import { useChosen } from "../hooks/useChosen";
+import Footer from "../footer/footer";
 
 const Chosen = () => {
     const {chosen} = useChosen()
@@ -10,6 +11,7 @@ const Chosen = () => {
   } else {
     return <EmptyCart />;
   }
+  
 };
 
 export default Chosen;

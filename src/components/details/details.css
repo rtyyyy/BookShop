@@ -1,12 +1,13 @@
 .book__wrapper--item{
     background-color: rgba(181, 196, 209, 0.288);
     height: 100vh;
-    margin-top: 80px;
+    overflow: hidden;
+    
 }
 
 .book__content--item{
     display: flex;
-    
+    margin-top: 80px;
 }
 .book__button--item{
     width: 50px;

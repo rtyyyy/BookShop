@@ -3,7 +3,6 @@ import './details.css'
 import {BsBookmarkHeart, BsBookmarkHeartFill} from 'react-icons/bs'
 import Header from "../header/header";
 import { useParams } from "react-router-dom";
-import Footer from "../footer/footer";
 import { useChosen } from "../hooks/useChosen";
 import { useActions } from "../hooks/useActions";
 import Payment from "../payment/payment";
@@ -101,7 +100,6 @@ function BookItem( ){
         <div className="book__desc--item">
         <p>{book?.description}</p>
         </div>
-        <Footer/>
     </div>
    
     )

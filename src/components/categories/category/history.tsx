@@ -77,7 +77,7 @@ function History() {
             <div className="book__category--description">
             <p className="book__category--title" style={{marginLeft:0 , width:200, height:30}}>{book.title}</p>
             <h5 className="book__categpry--author">{book.author}</h5>
-            <p className="book__category--price" style={{ marginLeft:0}}>{book.price}</p>
+            <p className="book__category--price" style={{ marginLeft:0}}>{book.price}$</p>
         </div>
         </div>
         </Link>

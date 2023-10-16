@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Footer from "../footer/footer";
 import { BsBookmarkHeart, BsBookmarkHeartFill } from "react-icons/bs";
 import Header from "../header/header";
 import './details.css'
@@ -92,7 +91,6 @@ function MusicBook(){
         <div className="book__desc--item">
         <p>{book?.description}</p>
         </div>
-        <Footer/>
     </div>
         </div>
     )

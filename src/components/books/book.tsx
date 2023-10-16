@@ -41,7 +41,7 @@ function Book(){
             <div className="book__description">
             <p className="book__title" style={{listStyleType:'none', marginLeft:0}}>{book.title}</p>
             <h5 className="book__author">{book.author}</h5>
-            <p className="book__price" style={{ marginLeft:0}}>{book.price}</p>
+            <p className="book__price" style={{ marginLeft:0}}>{book.price}$</p>
         </div>
         </div>
         </Link>

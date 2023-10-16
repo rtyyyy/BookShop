@@ -14,6 +14,7 @@ export const store = configureStore({
   reducer:reducers,
    
 })
-export type RootState = ReturnType<typeof reducers>;
+
 //передаём главный редьюсер в хранилище//
 // 
+export type RootState = ReturnType<typeof reducers>;

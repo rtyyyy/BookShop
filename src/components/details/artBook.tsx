@@ -1,11 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Footer from "../footer/footer";
 import { BsBookmarkHeartFill , BsBookmarkHeart } from "react-icons/bs";
 import Header from "../header/header";
 import './details.css'
-import { useDispatch, useSelector } from "react-redux";
-import { actions } from "../../store/api/chosen";
 import { useActions } from "../hooks/useActions";
 import { useChosen } from "../hooks/useChosen";
 import Payment from "../payment/payment";
@@ -42,9 +39,10 @@ function ArtBook(){
     
     
     return(
-        <div>
+        
+            
 <div className="book__wrapper--item">
-            <Header/>
+<Header/>
             <div className="book__content--item">
             <div className="book__image">
             <img src={book?.img} alt="" style={{width:400, height:600 }} />
@@ -99,9 +97,9 @@ function ArtBook(){
         <div className="book__desc--item">
         <p>{book?.description}</p>
         </div>
-        <Footer/>
+        
     </div>
-        </div>
+        
     )
 }
 

@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useState } from "react";
 import './chosen.css'
 import Header from "../header/header";
@@ -7,6 +7,7 @@ import {AiOutlineShoppingCart} from 'react-icons/ai'
 import { useChosen } from '../hooks/useChosen';
 import { useActions } from "../hooks/useActions";
 import Payment from "../payment/payment";
+
 
 interface IBook{
   id : string,
@@ -33,7 +34,7 @@ const Cart = () => {
     <div>
         <Header/>
         <div className="book__header--cart">
-            <h2>Cart </h2>
+            <h2 style={{marginLeft:30}}>Cart </h2>
             <div><AiOutlineShoppingCart/></div>
         </div>
     <div className="cart__content--cart">
@@ -70,7 +71,7 @@ const Cart = () => {
                 <p style={{marginLeft:15}}>Total chosen  : {chosen.length} g.</p>
             </div>
             <div>
-                <p >Total cost: <span style={{color: 'rgba(146, 36, 45, 0.884)'}}>{sum}$</span> </p>
+                <p >Total cost: <span style={{color: 'rgba(146, 36, 45, 0.884)', width:100}}>{sum}$</span> </p>
             </div>
             <div style={{display:'flex'}}>
                 <button className="buy__button" style={{marginLeft:15}}><li onClick={() => setPaymentActive(true)} style={{ color:"white" , textDecoration:'none', listStyleType:'none', }}>Buy</li>
@@ -79,6 +80,7 @@ const Cart = () => {
             
         </div>
         </div>
+        
     </div>
   );
 };
