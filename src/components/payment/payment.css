@@ -27,7 +27,7 @@ pointer-events: all;
     display: flex;
 }
 .card__payment--wrapper h2 , p{
-    color: #0d0c22;
+    color: #0c2213;
     margin-left: 15px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -49,7 +49,7 @@ pointer-events: all;
     border-radius: 8px;
     outline: none;
     background-color: #f3f3f4;
-    color: #0d0c22;
+    color: #0c2213;
     transition: .3s ease;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
@@ -67,7 +67,7 @@ pointer-events: all;
     border-radius: 8px;
     outline: none;
     background-color: #f3f3f4;
-    color: #0d0c22;
+    color: #0c2213;
     transition: .3s ease;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
@@ -91,7 +91,7 @@ pointer-events: all;
     border-radius: 8px;
     outline: none;
     background-color: #f3f3f4;
-    color: #0d0c22;
+    color: #0c2213;
     transition: .3s ease;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
@@ -108,7 +108,7 @@ pointer-events: all;
     border-radius: 8px;
     outline: none;
     background-color: #f3f3f4;
-    color: #0d0c22;
+    color: #0c2213;
     transition: .3s ease;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
@@ -119,14 +119,14 @@ pointer-events: all;
    
    .input__payment:focus, input:hover {
     outline: none;
-    border-color: rgba(104, 166, 218, 0.479);
+    border-color: rgba(104, 218, 165, 0.479);
     background-color: #fff;
-    box-shadow: 0 0 0 4px rgba(93, 146, 214, 0.384);
+    box-shadow: 0 0 0 4px rgba(93, 214, 164, 0.384);
    }
    
    .icon__card {
     position: relative;
-    fill: #9e9ea7;
+    fill: #9ea7a2;
     left: 40px;
     top: 2px;
     margin-left: 10px;
@@ -134,7 +134,7 @@ pointer-events: all;
    }
    .icon__email{
     position: relative;
-    fill: #9e9ea7;
+    fill: #9ea7a2;
     left: 30px;
     top: 2px;
    }
@@ -150,7 +150,7 @@ pointer-events: all;
     border-radius: 8px;
     outline: none;
     background-color: #f3f3f4;
-    color: #0d0c22;
+    color: #0c2213;
     transition: .3s ease;
     font-size: 16px;
     margin-left: 15px;
@@ -164,18 +164,18 @@ pointer-events: all;
     margin-left: 20px;
     display: flex;
     padding: 10px 295px;
-    border: 1px solid rgba(79, 123, 204, 0.637);
+    border: 1px solid rgba(79, 204, 131, 0.637);
     border-radius: 10px;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     color: #f1f1f1;
     font-size: 16px;
-    background: rgba(85, 85, 214, 0.87);
+    background: rgba(85, 214, 134, 0.87);
     margin-top: 15px;
     text-align: center;
 }
 .send__payment button:hover{
-    background: rgba(106, 106, 202, 0.87);
+    background: rgba(106, 202, 114, 0.87);
     transition: 0.3s;
     
 }

@@ -40,7 +40,7 @@ pointer-events: all;
     border-radius: 8px;
     outline: none;
     background-color: #f3f3f4;
-    color: #0d0c22;
+    color: #0c2211;
     transition: .3s ease;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
@@ -78,32 +78,32 @@ pointer-events: all;
     border-radius: 8px;
     outline: none;
     background-color: #f3f3f4;
-    color: #0d0c22;
+    color: #0c2214;
     transition: .3s ease;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
    }
    .input__name::placeholder {
-    color: #9e9ea7;
+    color: #9ea7a1;
    }
    
    .input__message:focus, input:hover {
     outline: none;
-    border-color: rgba(104, 166, 218, 0.479);
+    border-color: rgba(104, 218, 165, 0.479);
     background-color: #fff;
-    box-shadow: 0 0 0 4px rgba(93, 146, 214, 0.384);
+    box-shadow: 0 0 0 4px rgba(93, 214, 147, 0.384);
    }
    
    .icon__profil {
     position: relative;
-    fill: #9e9ea7;
+    fill: #9ea7a1;
     left: 30px;
     top: 2px;
     
    }
    .icon__email{
     position: relative;
-    fill: #9e9ea7;
+    fill: #9ea7a1;
     left: 30px;
     top: 2px;
    }
@@ -118,8 +118,8 @@ pointer-events: all;
     border: 2px solid transparent;
     border-radius: 8px;
     outline: none;
-    background-color: #f3f3f4;
-    color: #0d0c22;
+    background-color: #f3f4f4;
+    color: #0c2216;
     transition: .3s ease;
     font-size: 16px;
     margin-left: 15px;
@@ -135,22 +135,22 @@ pointer-events: all;
     margin-left: 15px;
     display: flex;
     padding: 10px 300px;
-    border: 1px solid rgba(79, 123, 204, 0.637);
+    border: 1px solid rgba(79, 204, 121, 0.637);
     border-radius: 10px;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-    color: #f1f1f1;
+    color: #fff;
     font-size: 16px;
-    background: rgba(85, 85, 214, 0.87);
+    background: rgba(85, 214, 134, 0.87);
     margin-top: 10px;
     text-align: center;
 }
 .send__message button:hover{
-    background: rgba(106, 106, 202, 0.87);
+    background: rgba(106, 202, 119, 0.87);
     transition: 0.3s;
 }
 .social__media--popup a{
-    color: rgb(32, 32, 110);
+    color: rgb(32, 110, 51);
     font-size: 25px;
     margin: 20px;
 }
@@ -161,7 +161,7 @@ pointer-events: all;
     padding-bottom: 15px;
 }
 .social__media--popup a:hover{
-    color: #a3a8ee;
+    color: #a3eebc;
 }
 .header__mark--popup{
     position: absolute;

@@ -19,7 +19,8 @@ function History() {
     const [books, setBooks] = useState<IBook[]>([]); //инфа о книгахъ//
     const [currentPage, setCurrentPage] = useState(1); //номер текущей страницы//
     const [fetching, setFetching] = useState(true); // значение true в том случае если мы подгружаем данные//
-
+    const [filteredBooks, setFilteredBooks] = useState<IBook[]>([]);
+    const [searchQuery, setSearchQuery] = useState('');
     
     useEffect(()=>{
         if(fetching){
@@ -48,6 +49,12 @@ function History() {
         }
    
     }
+    useEffect(() => {
+        const filtered = books.filter((book) =>
+          book.title.toLowerCase().includes(searchQuery.toLowerCase())
+        );
+        setFilteredBooks(filtered);
+      }, [books, searchQuery]);
     return (
         <div className="catalog__wrapper">
             <Header />
@@ -55,7 +62,18 @@ function History() {
                 <div className="search__input">
                     <h2 className="search__title">You can seacrh a book in this category!</h2>
                     <div className="search__field">
-                        <Input />
+                    <div>
+                        <div className="group">
+                        <svg className="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+                        <input 
+                        placeholder="Search a book"
+                        type="search"
+                        className="input"
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        />
+                    </div>
+                    </div>
                         <button>Search</button>
                     </div>
                 </div>
@@ -66,7 +84,7 @@ function History() {
             <p>Select from the chosen category</p>
         </div>
         <div  className="book__category--wrapper">
-        {books.map(book => (
+        {filteredBooks.map(book => (
             <div key={book.id} style={{width:300}}>
                 <Link to={`http://localhost:3000/historyBook/${book.id}`} >
             <div  className="book__category--item">

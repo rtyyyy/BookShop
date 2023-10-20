@@ -1,6 +1,6 @@
 .footer__wrapper{
     height: 200px;
-    background-color: #4d58ff;
+    background-color: #06B36D;
     text-align: center;
     margin-top: 100px;
     position: relative;
@@ -29,7 +29,7 @@ padding-bottom: 15px;
     color: #a3a8ee;
 }
 .social__media--footer a:hover{
-    color: #a3a8ee;
+    color: #a3eec0;
 }
 .copyright__footer{
     color: white;

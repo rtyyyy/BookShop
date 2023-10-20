@@ -1,5 +1,5 @@
 .books__title{
-    color: rgba(66, 66, 124, 0.897) ;
+    color: rgba(66, 124, 88, 0.897) ;
     font-family: 'Montserrat', sans-serif;
     font-size: 26px;
     margin-left: 20vh;
@@ -19,14 +19,14 @@
     border-radius: 15px;
     background-color: white;
     font-family: 'Montserrat', sans-serif;
-    color: rgba(46, 46, 63, 0.836) ;
+    color: rgba(46, 63, 51, 0.836) ;
     padding-bottom: 2px;
 }
 .book__item:active{
-    color : rgba(46, 46, 63, 0.836) ; 
+    color : rgba(46, 63, 51, 0.836) ; 
 }
 .book__item:hover{
-    box-shadow: 1px 1px 1px 2px rgba(78, 78, 128, 0.596)  ;
+    box-shadow: 1px 1px 1px 2px rgba(78, 128, 99, 0.596)  ;
     transition: all 0.2s;
     cursor: pointer;
     

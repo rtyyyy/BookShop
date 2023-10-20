@@ -1,11 +1,12 @@
 .search__wrapper{
     height: 300px;
-    background: rgba(162, 170, 204, 0.705);
+    background: #60e080ab;
     padding-top: 80px;
+    display: flex;
 }
 .search__title{
     font-family: 'Open Sans', sans-serif;
-    color: rgba(71, 67, 121, 0.884);
+    font-weight: 500;
     font-size: 36px;
     width: 450px;
 }
@@ -20,19 +21,27 @@
 
 }
 .search__field button{
-    width: 100px;
+    
     margin-left: 100px;
     display: flex;
-    padding: 10px 20px;
-    border: 1px solid rgba(79, 123, 204, 0.637);
+    padding: 10px 50px;
+    border: 1px solid rgba(79, 204, 135, 0.637);
     border-radius: 20px;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-    color: #f1f1f1;
+    color: #fff;
     font-size: 16px;
-    background: rgba(85, 85, 214, 0.87);
+    background: rgba(85, 214, 139, 0.87);
 }
 .search__field button:hover{
-    background: rgba(106, 106, 202, 0.87);
+    background: rgba(106, 202, 106, 0.87);
     transition: 0.3s;
+}
+.search__image img{
+    width: 320px;
+    height: 200px;
+}
+.search__image{
+    margin-top: 20px;
+    margin-left: 45%;
 }

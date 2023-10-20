@@ -9,7 +9,7 @@
     
 }
 .books__category--title {
-    color: rgba(66, 66, 124, 0.897) ;
+    color: rgba(66, 124, 83, 0.897) ;
     font-family: 'Montserrat', sans-serif;
     font-size: 26px;
     margin-left: 20vh;
@@ -30,14 +30,14 @@
     border-radius: 15px;
     background-color: white;
     font-family: 'Montserrat', sans-serif;
-    color: rgba(46, 46, 63, 0.836) ;
+    color: rgba(46, 63, 50, 0.836) ;
     padding-bottom: 2px;
 }
 .book__category--item:active{
-    color : rgba(46, 46, 63, 0.836) ; 
+    color : rgba(46, 63, 50, 0.836) ; ; 
 }
 .book__category--item:hover{
-    box-shadow: 1px 1px 1px 2px rgba(78, 78, 128, 0.596)  ;
+    box-shadow: 1px 1px 1px 2px rgba(78, 128, 97, 0.596)  ;
     transition: all 0.2s;
     cursor: pointer;
     
@@ -60,3 +60,46 @@
 .book__category--price{
     color: rgba(146, 36, 45, 0.884);
 }
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+   }
+   
+   .input {
+    width: 100%;
+    width:300px;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+   }
+   
+   .input::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    border-color: rgba(104, 166, 218, 0.479);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(93, 146, 214, 0.384);
+   }
+   
+   .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+   }

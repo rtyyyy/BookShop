@@ -16,13 +16,13 @@ article {
     padding: 0 10px 0 20px;
     border-radius: 6px;
     cursor: pointer;
-    background-color: #2472f88e;
+    background-color: #24f8648e;
     margin-bottom: 10px;
     color: #f8f8f8;
   }
   
   article header.active {
-    background: #6366f1;
+    background: #6ff163;
   }
   
   article header.active span {
